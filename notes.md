@@ -20,8 +20,8 @@ Dependently-typed: Coq, Agda, Idris
 
 
 ## Format
-1. Dev env setup: compilers, repls, editor config, etc. 15m to 1h
-2. Getting started docs 15m
+1. Getting started docs 15m
+2. Dev env setup: compilers, repls, editor config, etc. 15m to 1h
 3. Hello world web service 30m
 4. Twitch chat bot: send only to start, command bot
 
@@ -35,3 +35,4 @@ Dependently-typed: Coq, Agda, Idris
 ### Off stream
 1. Recompile emacs with native comp
 2. Maybe fix obs view of alacritty
+3. Add timer to obs scenes
