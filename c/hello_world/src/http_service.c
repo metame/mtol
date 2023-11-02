@@ -7,11 +7,6 @@
 /* TODO: edit this function to handle HTTP data and answer Websocket requests.*/
 static void on_http_request(http_s *h) {
   /* set a response and send it (finnish vs. destroy). */
-  fio_str_info_s method = fiobj_obj2cstr(h->method);
-  puts(method.data);
-  fio_str_info_s path = fiobj_obj2cstr(h->path);
-  puts(path.data);
-  // io_cstr_s path = fiobj_obj2cstr(h->path);
   http_send_body(h, "Hello World!", 12);
 }
 
