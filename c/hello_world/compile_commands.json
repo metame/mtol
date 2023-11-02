@@ -1,0 +1,35 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-I/usr/local/Cellar/openssl@3/3.1.4/include",
+      "-g",
+      "-std=c11",
+      "-fpic",
+      "-D_FILE_OFFSET_BITS=64",
+      "-Wshadow",
+      "-Wall",
+      "-Wextra",
+      "-Wno-missing-field-initializers",
+      "-Wpedantic",
+      "-O2",
+      "-I./",
+      "-Ilib",
+      "-Ilib/facil",
+      "-Ilib/facil/tls",
+      "-Ilib/facil/fiobj",
+      "-Ilib/facil/cli",
+      "-Ilib/facil/http",
+      "-Ilib/facil/http/parsers",
+      "-Ilib/facil/redis",
+      "-Isrc",
+      "-o",
+      "tmp/src/http_service.o",
+      "src/http_service.c"
+    ],
+    "directory": "/Users/me/oss/mtol/c/hello_world",
+    "file": "/Users/me/oss/mtol/c/hello_world/src/http_service.c",
+    "output": "/Users/me/oss/mtol/c/hello_world/tmp/src/http_service.o"
+  }
+]

@@ -15,7 +15,7 @@
 
 # binary name and location
 ifndef NAME
-NAME=fioapp
+NAME=hello_world
 endif
 
 # a temporary folder that will be cleared out and deleted between fresh builds
@@ -75,7 +75,7 @@ override FLAGS += _FILE_OFFSET_BITS=64
 
 # c compiler
 ifndef CC
-	CC=gcc
+	CC=clang
 endif
 # c++ compiler
 ifndef CPP
