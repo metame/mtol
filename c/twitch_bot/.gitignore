@@ -17,3 +17,4 @@ tests/xxhash.c
 tests/words.txt
 obj.obj
 a.exe
+.cache/

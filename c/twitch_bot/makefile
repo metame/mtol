@@ -75,7 +75,7 @@ override FLAGS += _FILE_OFFSET_BITS=64
 
 # c compiler
 ifndef CC
-	CC=gcc
+	CC=clang
 endif
 # c++ compiler
 ifndef CPP

@@ -1,0 +1,35 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-c",
+      "-I/usr/local/Cellar/openssl@3/3.1.4/include",
+      "-g",
+      "-std=c11",
+      "-fpic",
+      "-D_FILE_OFFSET_BITS=64",
+      "-Wshadow",
+      "-Wall",
+      "-Wextra",
+      "-Wno-missing-field-initializers",
+      "-Wpedantic",
+      "-O2",
+      "-I./",
+      "-Ilib",
+      "-Ilib/facil",
+      "-Ilib/facil/tls",
+      "-Ilib/facil/fiobj",
+      "-Ilib/facil/cli",
+      "-Ilib/facil/http",
+      "-Ilib/facil/http/parsers",
+      "-Ilib/facil/redis",
+      "-Isrc",
+      "-o",
+      "tmp/src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/Users/me/oss/mtol/c/twitch_bot",
+    "file": "/Users/me/oss/mtol/c/twitch_bot/src/main.c",
+    "output": "/Users/me/oss/mtol/c/twitch_bot/tmp/src/main.o"
+  }
+]
