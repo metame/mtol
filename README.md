@@ -25,6 +25,11 @@ Dependently-typed: Coq, Agda, Idris
 3. Hello world web service 30m
 4. Twitch chat bot: send only to start, command bot
 
+### Hello World Web Service
+* GET `/hello` returns text response of "Hello World!"
+* GET `/hello/<name>` returns json response of `{"greeting": "Hello <name>!"}`
+* POST `/goodbye` takes a json payload of `{"name":string}` and returns text response of "Goodbye <name>"
+
 ## Directory Structure
 * Each lang has it's own directory from root
 * In the root directory, the README will contain links to the resources used
@@ -34,5 +39,4 @@ Dependently-typed: Coq, Agda, Idris
 
 ### Off stream
 1. Recompile emacs with native comp
-2. Maybe fix obs view of alacritty
-3. Add timer to obs scenes
+2. Add timer to obs scenes
