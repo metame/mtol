@@ -2,6 +2,9 @@
 
 [Reference](https://en.cppreference.com/w/c)
 
+> metameeee: "what are your favorite resources for learning C as an experienced high-level language developer?"
+> [strager](https://twitch.tv/strager): cppreference.com, Linux/macOS: man pages, Windows: MSDN
+
 ## Dev Env
 
 Emacs already has `c-mode` by default so nothing to install there.
