@@ -23,7 +23,7 @@ static void on_http_request(http_s *h) {
              && strcmp(method.data, "GET") == 0) {
     http_send_body(h, "Hello World!", 12);
     // fix below to be str startwith
-  } else if (strstr(path.data, "/hello/") != NULL
+  } else if (strnstr(path.data, "/hello/", 7) != NULL
              && strcmp(method.data, "GET") == 0) {
     // split the string on 2nd `/` then rest of path is name
     char *hello = strtok(path.data, "/");
