@@ -22,7 +22,7 @@ Dependently-typed: Coq, Agda, Idris
 ## Format
 1. Getting started docs 15m
 2. Dev env setup: compilers, repls, editor config, etc. 15m to 1h
-3. Hello world web service 30m
+3. Hello world web service
 4. Twitch chat bot: send only to start, command bot
 
 ### Hello World Web Service
