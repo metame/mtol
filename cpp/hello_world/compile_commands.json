@@ -1,0 +1,30 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-c",
+      "-O2",
+      "-std=c++11",
+      "-I",
+      "lib",
+      "-Wall",
+      "-Wextra",
+      "-pthread",
+      "-DCPPHTTPLIB_OPENSSL_SUPPORT",
+      "-I/usr/local/opt/openssl@1.1/include",
+      "-framework",
+      "CoreFoundation",
+      "-framework",
+      "Security",
+      "-DCPPHTTPLIB_ZLIB_SUPPORT",
+      "-DCPPHTTPLIB_BROTLI_SUPPORT",
+      "-I/usr/local/opt/brotli/include",
+      "-o",
+      "server",
+      "src/server.cpp"
+    ],
+    "directory": "/Users/me/oss/mtol/cpp/hello_world",
+    "file": "/Users/me/oss/mtol/cpp/hello_world/src/server.cpp",
+    "output": "/Users/me/oss/mtol/cpp/hello_world/server"
+  }
+]
