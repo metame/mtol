@@ -1,10 +1,10 @@
 [
   {
     "arguments": [
-      "/usr/bin/c++",
+      "/usr/local/opt/llvm/bin/clang++",
       "-c",
       "-O2",
-      "-std=c++11",
+      "-std=c++20",
       "-I",
       "lib",
       "-Wall",
@@ -20,11 +20,11 @@
       "-DCPPHTTPLIB_BROTLI_SUPPORT",
       "-I/usr/local/opt/brotli/include",
       "-o",
-      "server",
+      "tmp/server",
       "src/server.cpp"
     ],
     "directory": "/Users/me/oss/mtol/cpp/hello_world",
     "file": "/Users/me/oss/mtol/cpp/hello_world/src/server.cpp",
-    "output": "/Users/me/oss/mtol/cpp/hello_world/server"
+    "output": "/Users/me/oss/mtol/cpp/hello_world/tmp/server"
   }
 ]

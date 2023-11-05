@@ -1,5 +1,5 @@
 CXX = clang++
-CXXFLAGS = -O2 -std=c++11 -I lib -Wall -Wextra -pthread
+CXXFLAGS = -O2 -std=c++20 -I lib -Wall -Wextra -pthread
 
 PREFIX = /usr/local
 #PREFIX = $(shell brew --prefix)
@@ -22,7 +22,7 @@ BROTLI_SUPPORT = -DCPPHTTPLIB_BROTLI_SUPPORT -I$(BROTLI_DIR)/include -L$(BROTLI_
 
 all: server
 
-server : src/server.cpp lib/httplib.h Makefile
+server : src/server.cpp lib/httplib.h lib/json.hpp Makefile
 	$(CXX) -o tmp/server $(CXXFLAGS) src/server.cpp $(OPENSSL_SUPPORT) $(ZLIB_SUPPORT) $(BROTLI_SUPPORT)
 
 pem:
