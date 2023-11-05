@@ -1,4 +1,4 @@
-#CXX = clang++
+CXX = clang++
 CXXFLAGS = -O2 -std=c++11 -I lib -Wall -Wextra -pthread
 
 PREFIX = /usr/local
@@ -24,3 +24,10 @@ all: server
 
 server : src/server.cpp lib/httplib.h Makefile
 	$(CXX) -o tmp/server $(CXXFLAGS) src/server.cpp $(OPENSSL_SUPPORT) $(ZLIB_SUPPORT) $(BROTLI_SUPPORT)
+
+pem:
+	openssl genrsa 2048 > key.pem
+	openssl req -new -key key.pem | openssl x509 -days 3650 -req -signkey key.pem > cert.pem
+
+clean:
+	rm server client hello simplecli simplesvr upload redirect ssesvr ssecli benchmark *.pem
