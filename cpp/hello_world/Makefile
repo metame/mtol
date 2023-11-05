@@ -30,4 +30,4 @@ pem:
 	openssl req -new -key key.pem | openssl x509 -days 3650 -req -signkey key.pem > cert.pem
 
 clean:
-	rm server client hello simplecli simplesvr upload redirect ssesvr ssecli benchmark *.pem
+	rm tmp/server *.pem
