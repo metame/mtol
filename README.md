@@ -10,7 +10,7 @@
 Low-level: C, C++, Zig
 
 ### Week 2
-Lisps: Common, (typed) Racket, Scheme
+Lisps: Scheme, Common, Racket
 
 ### Week 3
 ML: Standard, Haskell, OCaml
