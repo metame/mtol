@@ -2,7 +2,7 @@
     .name = "Hello Ziggy World",
     .version = "0.0.1",
 
-    .paths = .{"src"},
+    .paths = .{""},
     .dependencies = .{
         // zap v0.1.14-pre
         .zap = .{
