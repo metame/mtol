@@ -27,4 +27,4 @@ The install process wasn't perfectly smooth, but it wasn't difficult either.
 
 ## Packages
 [Zap](https://github.com/zigzap/zap) - Backend web micro framework. Wraps facil.io (which we used for C)
-> Note: We did have issues with Zap's latest pre-release not being compatible with Zig 0.12, thanks to chatter [Southporter](https://github.com/zigzap/zap/tree/master) we were able to patch our cached version of Zap for compatibility without downgrading our Zig toolchain.
+> Note: We did have issues with Zap's latest pre-release not being compatible with Zig 0.12, thanks to chatter [Southporter](https://twitch.tv/Southporter) we were able to patch our cached version of Zap for compatibility without downgrading our Zig toolchain.
