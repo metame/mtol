@@ -1,0 +1,13 @@
+.{
+    .name = "Hello Ziggy World",
+    .version = "0.0.1",
+
+    .paths = .{"src"},
+    .dependencies = .{
+        // zap v0.1.14-pre
+        .zap = .{
+            .url = "https://github.com/zigzap/zap/archive/refs/tags/v0.1.14-pre.tar.gz",
+            .hash = "122067d12bc7abb93f7ce623f61b94cadfdb180cef12da6559d092e6b374202acda3",
+        },
+    },
+}
