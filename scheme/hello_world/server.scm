@@ -44,10 +44,7 @@
 (define (handler request request-body)
   (let ((path-parts (request-path-components request))
          (method (request-method request)))
-    (display method)
-    (display path-parts)
     (cond
-     ;; check for whether there is a 2nd element before cadr
      ((and (equal? (car path-parts) "hello")
            (= 2 (length path-parts))
            (not (nil? (cdr path-parts))))
