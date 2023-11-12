@@ -42,7 +42,7 @@
     (format t "~S~%" path)
     (cond
       ((and (eq :GET method)
-           (equal "/hello" path))
+            (equal "/hello" path))
        (hello-handler env))
 
       ((and (eq :GET method)
