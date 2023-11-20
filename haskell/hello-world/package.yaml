@@ -14,6 +14,9 @@ extra-source-files:
 # synopsis:            Short description of your package
 # category:            Web
 
+default-extensions:
+- OverloadedStrings
+
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
@@ -21,6 +24,11 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- bytestring
+- http-types
+- scotty == 0.20.*
+- text
+- aeson
 
 ghc-options:
 - -Wall

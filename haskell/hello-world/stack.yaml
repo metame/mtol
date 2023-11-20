@@ -36,7 +36,7 @@ packages:
 # forks / in-progress versions pinned to a git hash. For example:
 #
 extra-deps:
-  - scotty-0.20.1
+- scotty-0.20.1@sha256:f51d7062b2732115cb8b9c63ded0c7a94467ee4fc68ebbde18687a836b74bcd5,5226
 # - acme-missiles-0.3
 # - git: https://github.com/commercialhaskell/stack.git
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a

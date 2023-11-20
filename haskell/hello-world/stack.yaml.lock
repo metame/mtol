@@ -10,7 +10,7 @@ packages:
       sha256: 0a42c300e7e5ed06fba6216f28b3c67be3d46fafba9b68957786fb52d6517a3b
       size: 1945
   original:
-    hackage: scotty-0.20.1
+    hackage: scotty-0.20.1@sha256:f51d7062b2732115cb8b9c63ded0c7a94467ee4fc68ebbde18687a836b74bcd5,5226
 snapshots:
 - completed:
     sha256: 5921ddc75f5dd3f197fbc32e1e5676895a8e7b971d4f82ef6b556657801dd18a
