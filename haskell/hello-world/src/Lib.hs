@@ -19,6 +19,5 @@ greet name = Greeting $ mconcat ["Hello ", name, "!"]
 
 newtype Named = Named {name :: Text} deriving (Show, Generic, FromJSON)
 
--- return a mayb and the handler should deal with the error if nothing
 getName :: ByteString -> Maybe Text
 getName s = name <$> decode s
