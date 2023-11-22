@@ -1,5 +1,7 @@
+let text_plain = ("Content-type:", "text/plain")
+
 (* GET `/hello` returns text response of "Hello World!" *)
-let hello _ = Dream.html Hello_world.world
+let hello _ = Dream.respond ~headers:[text_plain] Hello_world.world
 
 (* GET `/hello/<name>` returns json response of `{"greeting": "Hello <name>!"}` *)
 let hello_name req = Dream.json @@ Hello_world.get_greeting @@ Dream.param req "name"
@@ -8,11 +10,9 @@ let hello_name req = Dream.json @@ Hello_world.get_greeting @@ Dream.param req "
 let goodbye req =
   let%lwt body = Dream.body req in
 
-  let _ = {greeting = "wtf"} in
-
-  let name = Hello_world.get_name body in
-
-  Dream.html @@ "Goodbye " ^ name
+  match Hello_world.get_name body with
+    | Ok n -> Dream.respond ~headers:[text_plain] @@ "Goodbye " ^ n
+    | Error _ -> Dream.respond ~status:(`Bad_Request) @@ "Bad Request: " ^ body
 
 let routes =
   [
@@ -21,4 +21,4 @@ let routes =
     Dream.post "/goodbye" goodbye;
   ]
 
-let () = Dream.run @@ Dream.router routes
+let () = Dream.run ~port:3000 @@ Dream.router routes

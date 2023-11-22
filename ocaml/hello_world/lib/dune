@@ -1,3 +1,4 @@
 (library
  (name hello_world)
- (preprocess (pps ppx_yojson_conv)))
+ (libraries ppx_deriving_yojson.runtime)
+ (preprocess (pps ppx_deriving_yojson)))

@@ -1,5 +1,3 @@
-open Ppx_yojson_conv_lib.Yojson_conv.Primitives
-
 let world = "Hello World!"
 
 type greeting = {
@@ -8,15 +6,19 @@ type greeting = {
 
 let get_greeting name =
   {greeting = "Hello " ^ name ^ "!"}
-  |> yojson_of_greeting
+  |> greeting_to_yojson
   |> Yojson.Safe.to_string
 
 type named = {
     name : string;
   } [@@deriving yojson]
 
+let try_json s =
+  try Ok (Yojson.Safe.from_string s)
+  with Yojson.Json_error msg -> Error msg
+
 let get_name body =
-  let named = body
-              |> Yojson.Safe.from_string
-              |> named_of_yojson
-  in named.name
+  body
+  |> try_json
+  |> fun j -> Result.bind j named_of_yojson
+  |> Result.map (fun n -> n.name)

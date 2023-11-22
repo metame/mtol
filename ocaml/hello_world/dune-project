@@ -19,7 +19,7 @@
  (name hello_world)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml dune dream ppx_yojson_conv)
+ (depends ocaml dune dream ppx_deriving_yojson)
  (tags
   (topics "to describe" your project)))
 
