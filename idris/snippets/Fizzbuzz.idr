@@ -1,8 +1,11 @@
 module Fizzbuzz
 
+import Data.Vect
+
+export
 fizzbuzz : Int -> String
-fizzbuzz x =
-  if (mod x 3 == 0) && (mod x 5 == 0) then "fizzbuzz" else
-  if (mod x 3 == 0) then "fizz" else
-  if (mod x 5 == 0) then "buzz" else
-  show x
+fizzbuzz x with (mod x 3, mod x 5)
+  fizzbuzz x | (0, 0) = "fizzbuzz"
+  fizzbuzz x | (0, _) = "fizz"
+  fizzbuzz x | (_, 0) = "buzz"
+  fizzbuzz x | _ = show x
