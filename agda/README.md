@@ -1,6 +1,7 @@
 # Agda
 
 https://www.google.com/search?q=agda+lang&oq=agda&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg7MgYIARBFGDsyBggCEEUYPTIGCAMQLhhA0gEIMzQzMWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8
+https://rosettacode.org/wiki/FizzBuzz#Agda
 https://wiki.portal.chalmers.se/agda/pmwiki.php
 https://agda.readthedocs.io/en/latest/getting-started/a-taste-of-agda.html#agda-as-a-proof-assistant-proving-associativity-of-addition
 https://plfa.github.io/
