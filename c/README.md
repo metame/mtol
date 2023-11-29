@@ -1,6 +1,14 @@
 # C
 
+## Vods
+[Day 1](https://www.youtube.com/watch?v=b8ShKLZKlzU)
+[Day 2](https://www.youtube.com/watch?v=ou5W2JMsorY)
+
+## References
+
 [Reference](https://en.cppreference.com/w/c)
+[Facil Web Framework](https://facil.io/)
+[cJSON](https://github.com/DaveGamble/cJSON)
 
 > metameeee: "what are your favorite resources for learning C as an experienced high-level language developer?"
 > [strager](https://twitch.tv/strager): cppreference.com, Linux/macOS: man pages, Windows: MSDN

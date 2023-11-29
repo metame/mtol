@@ -11,29 +11,28 @@ Recordings can be found on [YouTube](https://www.youtube.com/playlist?list=PLIQM
 ### Week 1
 
 Low-level:
-[C](./c/README.md)
-[C++](/cpp/README.md)
+[C](/c)
+[C++](/cpp)
 [Zig](/zig)
 
 ### Week 2
 
 Lisps:
-[Scheme](/scheme/)
-Common
-Racket
+[Scheme](/scheme)
+[Common Lisp](/common_lisp)
+[Racket](/racket)
 
 ### Week 3
 ML:
-Standard
-Haskell
-OCaml
+[Standard ML](/standardML)
+[Haskell](/haskell)
+[OCaml](/ocaml)
 
 ### Week 4
 Dependently-typed:
-Coq
-Agda
-Idris
-
+[Coq](/coq)
+[Agda](/agda)
+[Idris](/idris)
 
 ## Format
 1. Getting started docs 15m
