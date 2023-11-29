@@ -9,14 +9,16 @@ Recordings can be found on [YouTube](https://www.youtube.com/playlist?list=PLIQM
 ## Schedule
 
 ### Week 1
+
 Low-level:
 [C](./c/README.md)
 [C++](/cpp/README.md)
-Zig
+[Zig](/zig)
 
 ### Week 2
+
 Lisps:
-Scheme
+[Scheme](/scheme/)
 Common
 Racket
 
