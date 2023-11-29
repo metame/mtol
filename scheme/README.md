@@ -1,5 +1,11 @@
 # Scheme
 
+## VODs
+
+* [Day 1](https://www.youtube.com/watch?v=TFtnmthigUY)
+
+## References
+
 * [Scheme.org](https://www.scheme.org/)
 * [Reference](https://www.gnu.org/software/guile/manual/guile.html#API-Reference)
 * [Scheme Primer](https://spritely.institute/static/papers/scheme-primer.html)
