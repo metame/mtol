@@ -3,20 +3,34 @@
 12 languages in 4 weeks
 1 week per language grouping
 4 hours per language (non contiguous)
+Streamed live on [twitch.tv/metameeee](https://twitch.tv/metameeee)
+Recordings can be found on [YouTube](https://www.youtube.com/playlist?list=PLIQMZpTvfeMYRLWuaEHZ0mNTXctfoUwUt)
 
 ## Schedule
 
 ### Week 1
-Low-level: C, C++, Zig
+Low-level:
+[C](./c/README.md)
+[C++](/cpp/README.md)
+Zig
 
 ### Week 2
-Lisps: Scheme, Common, Racket
+Lisps:
+Scheme
+Common
+Racket
 
 ### Week 3
-ML: Standard, Haskell, OCaml
+ML:
+Standard
+Haskell
+OCaml
 
 ### Week 4
-Dependently-typed: Coq, Agda, Idris
+Dependently-typed:
+Coq
+Agda
+Idris
 
 
 ## Format
