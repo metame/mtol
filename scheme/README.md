@@ -32,4 +32,5 @@ There's no package manager but I found the install process for Guile modules to 
 Most tools recommend installing with [Guix](https://guix.gnu.org), which seems like a good option if you're on GNU/Linux, but isn't supported on MacOS so we went without some tools that probably could've helped early on (like an LSP, for example)
 
 ## Packages
-[guile-json](https://github.com/aconchillo/guile-json)
+
+* [guile-json](https://github.com/aconchillo/guile-json)

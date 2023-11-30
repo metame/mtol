@@ -8,8 +8,6 @@
 ## References
 
 * [Reference](https://en.cppreference.com/w/c)
-* [Facil Web Framework](https://facil.io/)
-* [cJSON](https://github.com/DaveGamble/cJSON)
 
 > metameeee: "what are your favorite resources for learning C as an experienced high-level language developer?"
 > [strager](https://twitch.tv/strager): cppreference.com, Linux/macOS: man pages, Windows: MSDN
@@ -27,6 +25,11 @@ Most likely you already have `gcc`, but there are other options out there. If yo
 
 ### Issues
 At first I had issues with `clangd` not finding external packages. This was fixed by installing [Bear](https://github.com/rizsotto/Bear).
+
+## Packages
+
+* [Facil Web Framework](https://facil.io/)
+* [cJSON](https://github.com/DaveGamble/cJSON)
 
 ## TODO
 
