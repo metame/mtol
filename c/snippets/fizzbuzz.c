@@ -81,7 +81,9 @@ char* fizzbuzz_v2(int n) {
     // Since malloc returns a void pointer, we need to cast it to char*. You can
     // ignore the warning if you want, but it's a good practice to cast it.
     // But now, it's your responsibility to free the memory.
-    char* buffer = (char*)malloc(256);
+    // Malloc allocates memory in bytes, so we need to multiply the number of
+    // elements by the size of each element.
+    char* buffer = (char*)malloc(256 * sizeof(char));
     
     if (buffer == NULL) {
         fprintf(stderr, "Error: malloc failed\n");
