@@ -12,3 +12,16 @@ https://github.com/ocaml-community/yojson#readme
 https://github.com/aantron/dream/tree/master/example/1-hello
 https://v2.ocaml.org/manual/moduleexamples.html#s%3Aseparate-compilation
 https://github.com/ocaml-ppx/ppx_deriving_yojson
+
+## Adding github/external dependency
+
+Options:
+* opam pin add <package-name> <git-url>
+* adding github dependencies in project.opam.template file where `project` is your project name:
+e.g.
+```
+pin-depends: [
+  ["tailwindcss.dev" "https://github.com/tmattio/opam-tailwindcss/archive/3e60fc32bbcf82525999d83ad0f395e16107026b.tar.gz"]
+  ["olinkcheck.~dev" "git+https://github.com/tarides/olinkcheck"]
+  ]
+```
